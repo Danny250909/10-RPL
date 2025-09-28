@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head style="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box {
+            display: flex;
+            justify-content: space-between;
+            width: 75%;
+            margin: auto;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .lebar {
+            height: 100px;
+        }
+        .tinggi {
+            
+        }
+        .panjang {
+            width: 100%;
+        }
+        .box-1, .box-2, .box-3 {
+            width: 30%;
+            height: 100px;
+        }
+        .box-1 {
+            background-color: blue;
+        }
+        .box-2 {
+            background-color: aliceblue;
+        }
+        .box-3 {
+            background-color: aqua;
+        }
+        .batas-atas {
+            margin-top: 20px;
+        }
+        .batas-bawah {
+            margin-bottom: 20px;
+        }
+    </style>
+    <!-- <style>
+        div {
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+        #Identitas {
+            /* padding: 20px;
+            margin: 5px; */
+            text-align: center;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+        .Pendidikan {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .huruf {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            color: black;
+        }
+        .jarak {
+            margin: 20px;
+            padding: 15px;
+        }
+    </style> -->
+</head>
+<body>
+    <div style="width: 75%; margin: auto; border: 1px solid black; padding: 10px;">
+        <div id="Identitas" class="huruf jarak" style="background-color: red;">
+            Identitas
+        </div>
+        <div class="Pendidikan huruf jarak" style="background-color: yellow; " >
+            Riwayat Pendidikan
+        </div>
+        <div class="Kompetensi huruf jarak" style="background-color: green;">
+            Kompetensi
+        </div>
+    </div>
+    <!-- <input type="text" placeholder="Masukkan Soft atau Hard Skill Anda">
+    <button id="btn" >Simpan</button> -->
+    <br>
+
+    <nav>
+    <div class="box">
+        <div class="box-1">
+            box 1
+        </div>
+        <div class="box-2">
+            box 2
+        </div>
+        <div class="box-3">
+            box 3
+        </div>
+    </div>    
+</nav>
+    <footer>
+    <br>
+    <a href="pages/profil.html">Kembali</a>
+    </footer>
+</body>
+</html>
