@@ -1,1 +1,0 @@
-<h1>Jurusan SMKN 2 BUDURAN</h1>

@@ -1,1 +1,0 @@
-<h1>Sejarah SMKN 2 BUDURAN</h1>
