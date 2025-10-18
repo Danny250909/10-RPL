@@ -1,0 +1,2 @@
+<h1>Sejarah</h1>
+<p>SMKN 2 Buduran didirikan pada tanggal 29 Januari 1979 dengan SK pendirian 017/0/1979. Sekolah ini telah terakreditasi A dengan nilai 94 dari BAN-S/M (Badan Akreditasi Nasional Sekolah/Madrasah) pada tahun 2021</p>
