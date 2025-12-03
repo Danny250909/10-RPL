@@ -1,0 +1,108 @@
+/* ===========================
+   NAVBAR
+   =========================== */
+nav {
+  background-color: #333; /* Warna latar belakang navbar */
+  color: white; /* Warna teks navbar */
+  padding: 10px; /* Jarak dalam navbar */
+  display: flex; /* Mengatur isi navbar jadi sejajar ke samping */
+  justify-content: space-between; /* Memisahkan judul di kiri dan menu di kanan */
+  align-items: center; /* Meratakan elemen secara vertikal */
+  margin: 0; /* Menghapus margin default */
+}
+
+nav a {
+  color: white; /* Warna teks link */
+  text-decoration: none; /* Menghapus garis bawah */
+  margin-left: 20px; /* Jarak antar menu */
+  font-weight: 600; /* Membuat teks sedikit tebal */
+}
+
+nav ul {
+  list-style: none; /* Menghapus bullet list */
+  margin: 0; /* Menghapus margin default */
+  padding: 0; /* Menghapus padding default */
+  display: flex; /* Menjadikan item menu berbaris */
+  gap: 20px; /* Jarak antar item menu */
+}
+
+/* ===========================
+   PROFIL SEKOLAH
+   =========================== */
+#profil {
+  text-align: center; /* Menyejajarkan teks di tengah */
+  margin: 20px 0; /* Jarak atas & bawah section */
+  background-color: bisque; /* Warna latar belakang */
+  padding: 50px; /* Memberi ruang dalam */
+  /* height dihapus supaya konten fleksibel dan tidak "keteken" */
+}
+
+#profil h2 {
+  margin: 10px 0; /* Mengatur jarak judul */
+  font-weight: 600; /* Teks judul lebih tebal */
+}
+
+#profil img {
+  width: 150px; /* Lebar gambar */
+  height: 150px; /* Tinggi gambar */
+  border-radius: 50%; /* Membuat foto bulat */
+  object-fit: cover; /* Agar foto tidak gepeng dan tetap proporsional */
+  /* padding: auto (invalid), dihapus */
+}
+
+#profil p {
+  margin: 10px 0; /* Jarak paragraf */
+  font-weight: 600; /* Membuat teks sedikit lebih tebal */
+}
+
+/* ===========================
+   PRESTASI SEKOLAH
+   =========================== */
+#prestasi {
+  text-align: center; /* Menempatkan judul di tengah */
+  margin: 20px 0; /* Jarak atas & bawah section */
+}
+
+#prestasi h2 {
+  margin: 10px 0; /* Jarak judul */
+  font-weight: 600; /* Teks judul lebih tebal */
+}
+
+/* Layout galeri prestasi */
+.gambar {
+  display: flex; /* Bikin foto berjejer secara horizontal */
+  gap: 20px; /* Jarak antar card prestasi */
+  justify-content: center; /* Menyusun foto agar ada di tengah */
+  flex-wrap: wrap; /* Membuat foto turun ke bawah jika layar kecil (responsif) */
+}
+
+/* Card prestasi */
+.prestasisekolah {
+  width: 300px; /* Lebar setiap card */
+  text-align: left; /* Isi teks rata kiri biar natural */
+}
+
+/* Gambar prestasi */
+.prestasisekolah img {
+  width: 100%; /* Mengisi penuh lebar card */
+  height: 180px; /* Tinggi tetap */
+  object-fit: cover; /* Memotong gambar agar tetap proporsional */
+  border-radius: 10px; /* Membuat sudut gambar melengkung */
+}
+
+/* ===========================
+   JADWAL PELAJARAN
+   =========================== */
+#jadwal {
+  text-align: center; /* Judul dan deskripsi di tengah */
+  margin: 20px 0; /* Jarak section */
+}
+
+#jadwal p {
+  margin: 10px 0; /* Jarak paragraf */
+  font-weight: 600; /* Teks lebih tebal */
+}
+
+#jadwal table {
+  margin: 0 auto; /* Meletakkan tabel tepat di tengah */
+}
