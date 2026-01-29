@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Penjumlahan dengan Callback</h3>
+<input id="x">
+<input id="y">
+<button onclick="hitung()">Hitung</button>
+<p id="hasil"></p>
+
+<script>
+function proses(a, b, callback) {
+  callback(a + b);
+}
+
+function hitung() {
+  proses(Number(x.value), Number(y.value), function (hasilHitung) {
+    hasil.innerHTML = hasilHitung;
+  });
+}
+</script>
+
+</body>
+</html>

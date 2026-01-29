@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Simulasi Ambil Data</h3>
+<button onclick="ambil()">Ambil Data</button>
+<p id="hasil"></p>
+
+<script>
+// async function
+async function ambilData() {
+  return "Data berhasil dimuat";
+}
+
+// async function dengan delay
+async function ambil() {
+  hasil.innerHTML = "Loading...";
+
+  await new Promise(function(resolve) {
+    setTimeout(resolve, 2000);
+  });
+
+  const data = await ambilData();
+  hasil.innerHTML = data;
+}
+</script>
+
+</body>
+</html>
