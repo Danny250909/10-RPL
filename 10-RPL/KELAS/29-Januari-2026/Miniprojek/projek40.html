@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><body>
+<h3>Mini Project 40</h3>
+<input id="a"><input id="b">
+<button onclick="t()">+</button>
+<button onclick="k()">-</button>
+<button onclick="ka()">×</button>
+<button onclick="ba()">÷</button>
+<p id="hasil"></p>
+<script>
+function tambah(a,b){return a+b;}
+function kurang(a,b){return a-b;}
+function kali(a,b){return a*b;}
+function bagi(a,b){return a/b;}
+function t(){hasil.innerHTML=tambah(Number(a.value),Number(b.value));}
+function k(){hasil.innerHTML=kurang(Number(a.value),Number(b.value));}
+function ka(){hasil.innerHTML=kali(Number(a.value),Number(b.value));}
+function ba(){hasil.innerHTML=bagi(Number(a.value),Number(b.value));}
+</script>
+</body></html>

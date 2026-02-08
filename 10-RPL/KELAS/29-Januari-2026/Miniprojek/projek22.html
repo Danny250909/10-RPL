@@ -1,0 +1,10 @@
+<!DOCTYPE html><html><body>
+<h3>Mini Project 22</h3>
+<input id="harga"><input id="diskon" placeholder="%">
+<button onclick="run()">Proses</button>
+<p id="hasil"></p>
+<script>
+function hitungDiskon(h,d){return h-(h*d/100);}
+function run(){hasil.innerHTML=hitungDiskon(Number(harga.value),Number(diskon.value));}
+</script>
+</body></html>
