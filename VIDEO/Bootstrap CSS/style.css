@@ -1,0 +1,74 @@
+/* body{
+    background-color: lightblue;
+} */
+.lima{
+    height: 50px;
+ }
+.seratus{
+    height: 100px;
+ }
+.merah{
+    background: red;
+}
+.kuning{
+    background: yellow;
+}
+.biru{
+    background: blue;
+}
+.hijau{
+    background: green;
+}
+.putih{
+    background: white;
+}
+.hitam{
+    background: black;
+}
+.carousel-item img{
+    height: 250px;
+}
+@media (min-width: 500x){
+    .carousel-item img{
+        height: 250px;
+        width: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+.carousel-item {
+    font-weight: bold;
+}
+.navbar-brand{
+    font-weight: bold;
+}
+.jumbotron{
+    padding: 1rem;
+}
+.container h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+.card img{
+    height: 200px;
+}
+.card {
+    width: 20rem;
+}
+/* .table-item img{
+    height: 250px;
+}
+@media (min-width: 500x){
+    .table-item img{
+        height: 250px;
+        width: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+} */
+.table-item {
+    font-weight: bold;
+}
+.container-table {
+    font-weight: bold;
+}

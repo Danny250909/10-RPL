@@ -1,0 +1,29 @@
+[
+    {
+        "idmenu": 1,
+        "idkategori": 1,
+        "menu": "Ice Cream Coklat",
+        "harga": 3000,
+        "warna": ["coklat"],
+        "stok": true,
+        "keterangan": null
+    },
+    {
+        "idmenu": 2,
+        "idkategori": 2,
+        "menu": "Ice Cream Vanilla",
+        "harga": 3000,
+        "warna": ["putih"],
+        "stok": false,
+        "keterangan": null
+    },
+    {
+        "idmenu": 7,
+        "idkategori": 7,
+        "menu": "Aneka Jus Buah",
+        "harga": 5000,
+        "warna": ["Tergantung buahnya"],
+        "stok": false,
+        "keterangan": null
+    }
+]

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+</head>
+<body>
+    <h1 id="judul">Tes</h1>
+    <p id="isi"></p>
+    <input type="number" id="bil1" value="">
+    <input type="number" id="bil2" value="">
+    <button onclick="hitung()">Hitung</button>
+
+    <h1 id="zodiakanda">Zodiak Anda: </h1>
+    <input type="number" id="bulan" placeholder="bulan">
+    <input type="number" id="tanggal" placeholder="tanggal">
+
+    <button onclick="zodiak()">Cari</button>
+    <!-- <input type="number" id="tangga"> -->
+
+    <h1 id="nilaianda">Nilai Anda</h1>
+    <input type="number" id="nilai" placeholder="Masukkan Nilai">
+    <button onclick="nilaianda()">Nilai</button>
+
+    <script>
+        function hitung() {     
+            let hasil = document.getElementById("judul").innerHTML;
+            let bil1 = document.getElementById("bil1").value;
+            let bil2 = document.getElementById("bil2").value;
+            
+            hasil.innerHTML = parseInt(bil1) + parseInt(bil2);
+        }
+
+        function zodiak() {
+            let bulan = parseInt(document.getElementById("bulan").value);
+            let tanggal = parseInt(document.getElementById("tanggal").value);
+            let zodiakanda = document.getElementById("zodiakanda");
+
+            if (bulan < 1 || bulan > 12) {
+                alert("Bulan tidak valid");
+            }else {
+                if (tanggal < 1 || tanggal > 31) {
+                    alert("Tanggal tidak valid");
+                }else {
+                    if (bulan = 1) {
+                        if (tanggal > 1 && tanggal < 20) {
+                            zodiakanda.innerHTML += "Aquarius";
+                    }else {
+                        zodiakanda.innerHTML = "Capricorn";
+                    }
+                }
+                if (bulan = 2) {
+                        if (tanggal > 1 && tanggal < 19) {
+                            zodiakanda.innerHTML += "Pisces";
+                    }else {
+                        zodiakanda.innerHTML = "Aquarius";
+                    }
+                }
+                if (bulan = 3) {
+                        if (tanggal > 1 && tanggal < 21) {
+                            zodiakanda.innerHTML += "Aries";
+                    }else {
+                        zodiakanda.innerHTML = "Pisces";
+                    }
+                }
+                if (bulan = 4) {
+                        if (tanggal > 1 && tanggal < 20) {
+                            zodiakanda.innerHTML += "Taurus";
+                    }else {
+                        zodiakanda.innerHTML = "Aries";
+                    }
+                }
+                if (bulan = 5) {
+                        if (tanggal > 1 && tanggal < 21) {
+                            zodiakanda.innerHTML += "Gemini";
+                    }else {
+                        zodiakanda.innerHTML = "Taurus";
+                    }
+                }
+                if (bulan = 6) {
+                        if (tanggal > 1 && tanggal < 21) {
+                            zodiakanda.innerHTML += "Cancer";
+                    }else {
+                        zodiakanda.innerHTML = "Gemini";
+                    }
+                }
+                if (bulan = 7) {
+                        if (tanggal > 1 && tanggal < 23) {
+                            zodiakanda.innerHTML += "Leo";
+                    }else {
+                        zodiakanda.innerHTML = "Cancer";
+                    }
+                }
+                if (bulan = 8) {
+                        if (tanggal > 1 && tanggal < 23) {
+                            zodiakanda.innerHTML += "Virgo";
+                    }else {
+                        zodiakanda.innerHTML = "Leo";
+                    }
+                }
+                if (bulan = 9) {
+                        if (tanggal > 1 && tanggal < 23) {
+                            zodiakanda.innerHTML += "Libra";
+                    }else {
+                        zodiakanda.innerHTML = "Virgo";
+                    }
+                }
+                if (bulan = 10) {
+                        if (tanggal > 1 && tanggal < 23) {
+                            zodiakanda.innerHTML += "Scorpio";
+                    }else {
+                        zodiakanda.innerHTML = "Libra";
+                    }
+                }
+                if (bulan = 11) {
+                        if (tanggal > 1 && tanggal < 22) {
+                            zodiakanda.innerHTML += "Sagittarius";
+                    }else {
+                        zodiakanda.innerHTML = "Scorpio";
+                    }
+                }
+                if (bulan = 12) {
+                        if (tanggal > 1 && tanggal < 22) {
+                            zodiakanda.innerHTML += "Capricorn";
+                    }else {
+                        zodiakanda.innerHTML = "Sagittarius";
+                    }
+                }
+                
+            }
+
+            // alert("tes");
+        }
+    }
+
+    function nilai() {
+        let nilai = parseInt(document.getElementById("nilai").value);
+        let nilaianda = document.getElementById("nilaianda");
+
+        if (nilai < 0 || nilai > 100) {
+            alert("Nilai tidak valid");
+        }else {
+            if (nilai >= 90 && nilai <= 100) {
+                nilaianda.innerHTML += "A";
+            }else if (nilai >= 70 && nilai <= 89) {
+                nilaianda.innerHTML += "B";
+            }else if (nilai >= 60 && nilai <= 69) {
+                nilaianda.innerHTML += "C";
+            }else if (nilai >= 50 && nilai <= 59) {
+                nilaianda.innerHTML += "D";
+            }else {
+                nilaianda.innerHTML += "E";
+            }
+        }
+
+        // alert("Nilai Anda: ");
+    }
+
+    </script>
+
+    <!-- buatlah konversi nilai:
+    jika 90 - 100, nilai nya adalah A 
+    70 - 89, nilai nya adalah B
+    60 - 69, nilai nya adalah C
+    50 - 59, nilai nya adalah D
+    dibawah 50, nilai nya adalah E
+    -->
+</body>
+</html>
